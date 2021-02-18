@@ -23,7 +23,9 @@
 #include "Arduino.h"
 #include <Client.h>
 
-#define THINGSPEAK_URL "api.thingspeak.com"
+#ifndef THINGSPEAK_URL
+# define THINGSPEAK_URL "api.thingspeak.com"
+#endif
 #define THINGSPEAK_PORT_NUMBER 80
 
 #ifdef ARDUINO_ARCH_AVR
